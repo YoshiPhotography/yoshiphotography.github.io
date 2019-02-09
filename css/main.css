@@ -39,16 +39,24 @@ body {
     z-index: 1;
 }
 
+.profile{
+    padding-top: 50px;
+    border-radius: 0;
+    border: none;
+    background-color: #fff !important;  /* 背景を透過 */
+    z-index: 1;
+}
+
 #logo-img{
     height: 20px;
 }
 
-.navbar-default .navbar-nav >li > a{
+.navbar-default .navbar-nav > li > a{
     color: #fff;
 }
 
-.navbar-default .navbar-nav >li > a:hover{
-    color: #aaa;
+.navbar-default .navbar-nav > li > a:hover{
+    color: #aaa !important;
 }
 
 /*　画面サイズが480pxからはここを読み込む　*/
@@ -60,6 +68,19 @@ body {
     .desktop {
         display: none;
     }
+
+    /* Navbar */
+    .mr-auto {
+        display: none;
+    }
+    .nav-link {
+        color: black !important;
+        font-size: 5vmin;
+    }
+    .nav-color {
+        background-color: #fff;
+        opacity: 0.6;
+    }
 }
 
 /*　画面サイズが768pxから1024pxまではここを読み込む　*/
@@ -70,6 +91,19 @@ body {
 
     .desktop {
         display: none;
+    }
+
+    /* Navbar */
+    .mr-auto {
+        display: none;
+    }
+    .nav-link {
+        color: black !important;
+        font-size: 5vmin;
+    }
+    .nav-color {
+        background-color: #fff;
+        opacity: 0.6;
     }
 }
 
