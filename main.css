@@ -1,0 +1,89 @@
+/*TOPメニュー*/
+@font-face {
+    font-family: 'GlossBloom';
+    src: url('../font/Gloss_And_Bloom.ttf') format('truetype');
+    font-style: normal;
+}
+
+body {
+    margin:0;
+    padding:0;
+
+    /* 画像ファイルの指定 */
+    /* background-image: url(../img/home_1.jpeg); */
+     
+    /* 画像を常に天地左右の中央に配置 */
+    /* background-position: center 20%; */
+ 
+    /* 画像をタイル状に繰り返し表示しない */
+    /* background-repeat: no-repeat; */
+     
+    /* コンテンツの高さが画像の高さより大きい時、動かないように固定 */
+    /* background-attachment: fixed; */
+     
+    /* 表示するコンテナの大きさに基づいて、背景画像を調整 */
+    /* background-size: cover; */
+     
+    /* 背景画像が読み込まれる前に表示される背景のカラー */
+    /* background-color: #464646; */
+
+    font-family: 'Sorts Mill Goudy', serif;
+    /* font-family: 'Pinyon Script', cursive; */
+    /* font-family: 'GlossBloom'; */
+}
+.navbar{
+    padding-top: 50px;
+    border-radius: 0;
+    border: none;
+    background-color: transparent !important;  /* 背景を透過 */
+    z-index: 1;
+}
+
+#logo-img{
+    height: 20px;
+}
+
+.navbar-default .navbar-nav >li > a{
+    color: #fff;
+}
+
+.navbar-default .navbar-nav >li > a:hover{
+    color: #aaa;
+}
+
+/*　画面サイズが480pxからはここを読み込む　*/
+@media screen and (min-width:320px) and ( max-width:768px) {
+    .smartphone .cb-slideshow li div h4 {
+        font-size: 8vmin !important;
+    }
+
+    .desktop {
+        display: none;
+    }
+}
+
+/*　画面サイズが768pxから1024pxまではここを読み込む　*/
+@media screen and (min-width:768px) and ( max-width:1023px) {
+    .smartphone .cb-slideshow li div h4 {
+        font-size: 6vmin !important;
+    }
+
+    .desktop {
+        display: none;
+    }
+}
+
+/*　画面サイズが1024pxからはここを読み込む　*/
+@media screen and (min-width:1024px) {
+    .smartphone {
+        display: none;
+    }
+}
+
+/* navbar color */
+.custom-toggler.navbar-toggler {
+    border-color: rgb(231, 231, 231) !important;
+}
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
