@@ -5,6 +5,12 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'imagineYOKOHAMA';
+    src: url('../font/imagineYOKOHAMA.otf') format('truetype');
+    font-style: normal;
+}
+
 body {
     margin:0;
     padding:0;
@@ -28,8 +34,6 @@ body {
     /* background-color: #464646; */
 
     font-family: 'Sorts Mill Goudy', serif;
-    /* font-family: 'Pinyon Script', cursive; */
-    /* font-family: 'GlossBloom'; */
 }
 .navbar{
     padding-top: 50px;
@@ -38,19 +42,6 @@ body {
     background-color: transparent !important;  /* 背景を透過 */
     z-index: 1;
 }
-
-.profile{
-    padding-top: 50px;
-    border-radius: 0;
-    border: none;
-    background-color: #fff !important;  /* 背景を透過 */
-    z-index: 1;
-}
-
-#logo-img{
-    height: 20px;
-}
-
 .navbar-default .navbar-nav > li > a{
     color: #fff;
 }
@@ -59,7 +50,36 @@ body {
     color: #aaa !important;
 }
 
-/*　画面サイズが480pxからはここを読み込む　*/
+/****************************** profile Page ******************************/
+.profile{
+    border-radius: 0;
+    border: none;
+    background-color: #fff !important;  /* 背景を透過 */
+    z-index: 1;
+}
+.prof_container {
+    width: 100%;
+    font-family: 'imagineYOKOHAMA';
+}
+.prof img {
+    width: 40vmin
+}
+
+
+#logo-img{
+    height: 20px;
+}
+
+/****************************** contact Page ******************************/
+.contact {
+    width: 100%;
+    font-family: 'imagineYOKOHAMA';
+}
+.official_account {
+    font-weight: bolder 
+}
+
+/***********　画面サイズが320pxからはここを読み込む　***********/
 @media screen and (min-width:320px) and ( max-width:768px) {
     .smartphone .cb-slideshow li div h4 {
         font-size: 8vmin !important;
@@ -69,7 +89,7 @@ body {
         display: none;
     }
 
-    /* Navbar */
+    /*********** Navbar ***********/
     .mr-auto {
         display: none;
     }
@@ -79,11 +99,60 @@ body {
     }
     .nav-color {
         background-color: #fff;
-        opacity: 0.6;
+        opacity: 0.7;
+    }
+
+    /*********** profile ***********/
+    .profile .navbar-brand {
+        color: black !important;
+    }
+    .prof_container {
+        width: 100%;
+        padding: 0 4vw;
+    }
+    .prof_container .prof_explain {
+        font-size: 2.9vw;  
+    }
+
+    .relative,
+    .relative:after { 
+        position: relative;
+        width: 100%;
+        height: 100%;
+        top: 0px;
+        left: 0px;
+        z-index: 0; 
+    }
+    .absolute {
+        z-index: 1000;
+        position: absolute;
+        left: 0%;
+        top: 100%;
+        width: 100%;
+    }
+
+    /*********** contact ***********/
+    .contact_container_1 {
+        padding-top: 3vh;
+    }
+    .contact .fab {
+        font-size: 15vmin;
+    }
+    .official_account {
+        padding: 3vh 0;
+    }
+    .link {
+        padding-bottom: 3vh !important;
+    }
+    .link_name {
+        font-size: 4vw !important;
+    }
+    .link_url {
+        font-size: 7vw !important;
     }
 }
 
-/*　画面サイズが768pxから1024pxまではここを読み込む　*/
+/***********　画面サイズが768pxから1024pxまではここを読み込む　***********/
 @media screen and (min-width:768px) and ( max-width:1023px) {
     .smartphone .cb-slideshow li div h4 {
         font-size: 6vmin !important;
@@ -93,7 +162,7 @@ body {
         display: none;
     }
 
-    /* Navbar */
+    /*********** Navbar ***********/
     .mr-auto {
         display: none;
     }
@@ -103,21 +172,116 @@ body {
     }
     .nav-color {
         background-color: #fff;
-        opacity: 0.6;
+        opacity: 0.7;
+    }
+
+    /*********** profile ***********/
+    .profile .navbar-brand {
+        color: black !important;
+    }
+    .prof_container {
+        width: 100%;
+        padding: 0 4vmin;
+    }
+    .prof_container .prof_explain {
+        font-size: 3vmin;  
+    }
+
+    .relative,
+    .relative:after { 
+        position: relative;
+        width: 100%;
+        height: 100%;
+        top: 0px;
+        left: 0px;
+        z-index: 0; 
+    }
+    .absolute {
+        z-index: 1000;
+        position: absolute;
+        left: 0%;
+        top: 100%;
+        width: 100%;
+    }
+    /*********** contact ***********/
+    .contact_container_1 {
+        padding-top: 5vh;
+    }
+    .contact_container_2 {
+        padding-top: 2vh;
+    }
+    .contact .fab {
+        font-size: 13vmin;
+    }
+    .official_account {
+        font-size: 3vw;
+        padding: 3vh 0;
+    }
+    .link_name {
+        font-size: 2.5vw !important;
+    }
+    .link_url {
+        font-size: 4vw !important;
     }
 }
 
-/*　画面サイズが1024pxからはここを読み込む　*/
+/***********　画面サイズが1024pxからはここを読み込む　***********/
 @media screen and (min-width:1024px) {
     .smartphone {
         display: none;
     }
+
+    /* profile */
+    .profile {
+        padding-top: 50px;
+    }
+    .profile .nav-link, .navbar-brand {
+        color: black !important;
+    }
+    .prof_container {
+        width: 100%;
+        padding-top: 50px !important;
+    }
+    .prof_container .prof_explain {
+        font-size: 2.4vmin;  
+    }
+
+    /*********** contact ***********/
+    .contact_container_1, .contact_container_2 {
+        padding-top: 5vh;
+    }
+    .contact .fab {
+        font-size: 13vmin;
+    }
+    .official_account {
+        font-size: 1.8vw;
+        padding: 4vh 0;
+    }
+    .link_name {
+        font-size: 1.2vw !important;
+    }
+    .link_url {
+        font-size: 2vw !important;
+    }
 }
 
-/* navbar color */
+/*********** navbar color ***********/
 .custom-toggler.navbar-toggler {
     border-color: rgb(231, 231, 231) !important;
 }
 .custom-toggler .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+/*********** icon color ***********/
+.fa-facebook-square {
+    color: #3b5998;
+}
+
+.fa-twitter-square {
+    color: #55acee;
+}
+
+.fa-instagram {
+    color: #bc2a8d;
 }

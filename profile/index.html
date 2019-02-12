@@ -19,17 +19,17 @@
     <link rel="stylesheet" href = "../css/style_2.css">
     
 
-    <title>Yoshi's Photo</title>
+    <title>Yoshi's Photography</title>
 </head>
 <body>
     <nav class="profile navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
-            <a class="navbar-brand" href="./">Yoshi's Photo</a>
+            <a class="navbar-brand" href="./">Yoshi's Photography</a>
             <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
         
-            <div class="collapse navbar-collapse nav-color" id="navbarNavDropdown">
+            <div class="collapse navbar-collapse nav-color absolute" id="navbarNavDropdown">
                 <ul class="navbar-nav mr-auto">　
                 </ul>
 
@@ -54,14 +54,38 @@
         </div>
     </nav>
 
+    <div class="container relative">
+        <div class="row">
+            <div class="prof_container d-flex flex-column flex-lg-row bd-highlight mb-3">
+                <div class="prof p-2 bd-highlight text-center">
+                    <img src="../img/profile/1.jpg">
+                </div>
+                <div class="prof_explain p-2 bd-highlight">
+                    <span class="">島根県在住の大学生Photographer</span><br>
+                    主な撮影テーマは、ポートレートや松江の文化・風景など<br>
+                    最近は動画作成なども行っている<br>
+                    <br>
+                    【経歴】<br>
+                    2016年 TEDxShimaneUにデザインチームリーダーとして参加<br>
+                    2017年 Canon EOS 80Dを購入し、趣味としてカメラを始める<br>
+                    2018年 写真家僧侶・豅 純吾（ながたにじゅんご）を師として仰ぐ<br>
+                    2019年 チーム水燈路広報チームに正式加入<br>
+                    <br>
+                    【使用機材】<br>
+                    <a href="https://www.sony.jp/ichigan/products/ILCE-7M3/" target="_blank">Sony α7Ⅲ</a><br>
+                    <a href="https://www.tamron.jp/product/lenses/a036.html" target="_blank">TAMRON 28-75mm F/2.8 di III RXD (Model A036)</a><br>
+                    <a href="https://www.amazon.co.jp/Manfrotto-190Go-%E3%82%A2%E3%83%AB%E3%83%9F-3%E3%82%A6%E3%82%A7%E3%82%A4%E9%9B%B2%E5%8F%B0%E3%82%AD%E3%83%83%E3%83%88-MK190GOA4TB-3W/dp/B017UG6H9E" target="_blank">ｱﾙﾐﾆｳﾑ三脚4段 3WAY雲台</a><br>
+                    <br>
+                    【編集ソフト】<br>
+                    <a href="https://www.adobe.com/jp/products/photoshop-lightroom.html" target="_blank">Adobe Lightroom</a><br>
+                    <a href="https://www.blackmagicdesign.com/jp/products/davinciresolve" target="_blank">Davinci Resolve 15</a><br>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    <script>
-    $(document).on('click','.navbar-collapse.in',function(e) {
-        if( $(e.target).is('a') ) {
-            $(this).collapse('hide');
-        }
-    });
-    </script>
+
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="../js/nav.js" type="text/javascript"></script>

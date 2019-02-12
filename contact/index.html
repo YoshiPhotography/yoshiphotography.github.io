@@ -8,6 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     
     <!-- フォント -->
     <link href="https://fonts.googleapis.com/css?family=Allura" rel="stylesheet">
@@ -19,19 +20,18 @@
     <link rel="stylesheet" href = "../css/style_2.css">
     
 
-    <title>Yoshi's Photo</title>
+    <title>Yoshi's Photography</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="profile navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
-            <a class="navbar-brand" href="./">Yoshi's Photo</a>
+            <a class="navbar-brand" href="./">Yoshi's Photography</a>
             <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
         
-            <div class="collapse navbar-collapse nav-color" id="navbarNavDropdown">
-                <ul class="navbar-nav mr-auto">　
-                </ul>
+            <div class="collapse navbar-collapse nav-color absolute" id="navbarNavDropdown">
+                <ul class="navbar-nav mr-auto"></ul>
 
                 <ul class="navbar-nav">
                     <li class="nav-item">
@@ -54,69 +54,42 @@
         </div>
     </nav>
 
-    <div class="container desktop">
-        <div class="row">
-            <ul class="cb-slideshow">
-                <li>
-                    <span>Image 01</span>
-                    <div><h4 class="key_title">Do you like being photographed?</i></h4></div>
-                </li>
-                <li> <span>Image 02</span>
-                    <div><h4 class="key_title">Or do you like taking pictures?</i></h4></div>
-                </li>
-                <li>
-                    <span>Image 03</span>
-                    <div><h4 class="key_title">All the women are flowers.</h4></div>
-                </li>
-                <li> <span>Image 04</span>
-                    <div><h4 class="key_title">Happiness is in everyday life</h4></div>
-                </li>
-                <li>
-                    <span>Image 05</span>
-                    <div><h4 class="key_title">Love a lot</h4></div>
-                </li>
-                <li> <span>Image 06</span>
-                    <div><h4 class="key_title">Let's also be beautiful</h4></div>
-                </li>
-            </ul>
+
+    <div class="contact container relative">
+        <div class="row contact_container_1 d-flex bd-highlight mb-3">
+            <div class="col-12 official_account text-center">
+                公式アカウント
+            </div>
+            <div class="col-4 p-2 bd-highlight text-center">
+                <a href="https://www.facebook.com/yoshitaka.linux" target="_blank"><i class="fab fa-facebook-square"></i></a>
+            </div>
+            <div class="col-4 p-2 bd-highlight text-center">
+                <a href="https://twitter.com/PhotoWithA7iii" target="_blank"><i class="fab fa-twitter-square"></i></i></a>
+            </div>
+            <div class="col-4 p-2 bd-highlight text-center">
+                    <a href="https://www.instagram.com/yoshitaka822" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+
+        <div class="row contact_container_2 d-flex bd-highlight mb-3">
+            <div class="col-12 official_account text-center">
+                関連リンク
+            </div>
+            <div class="link col-12 col-lg-4 p-2 bd-highlight text-center">
+                <div class="link_name">師匠のホームページ</div>
+                <a class="link_url" href="https://nagatanijungo.net/" target="_blank">Nagatani Jungo Create</a>
+            </div>
+            <div class="link col-12 col-lg-4 p-2 bd-highlight text-center">
+                <div class="link_name">専属モデル兼カメラマン</div>
+                <a class="link_url" href="https://kana0105.github.io/" target="_blank">Kana's Photo</a>
+            </div>
+            <div class="link col-12 col-lg-4 p-2 bd-highlight text-center">
+                <div class="link_name">広報として参加</div>
+                <a class="link_url" href="https://www.suitouro.jp/" target="_blank">松江水燈路</a>
+            </div>
         </div>
     </div>
 
-    <div class="container smartphone">
-        <div class="row">
-            <ul class="cb-slideshow">
-                <li>
-                    <span>Image 01</span>
-                    <div><h4 class="key_title">Happiness is in everyday life.</i></h4></div>
-                </li>
-                <li> <span>Image 02</span>
-                    <div><h4 class="key_title">A smile makes everyone happy.</i></h4></div>
-                </li>
-                <li>
-                    <span>Image 03</span>
-                    <div><h4 class="key_title">Fall of Japan is wonderful.</h4></div>
-                </li>
-                <li> <span>Image 04</span>
-                    <div><h4 class="key_title">Sometimes it is necessary to <br>stop and look back</h4></div>
-                </li>
-                <li>
-                    <span>Image 05</span>
-                    <div><h4 class="key_title">Anywhere but here</h4></div>
-                </li>
-                <li> <span>Image 06</span>
-                    <div><h4 class="key_title">The time has stopped <br>since the day still now.</h4></div>
-                </li>
-            </ul>
-        </div>
-    </div>
-
-    <script>
-    $(document).on('click','.navbar-collapse.in',function(e) {
-        if( $(e.target).is('a') ) {
-            $(this).collapse('hide');
-        }
-    });
-    </script>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
